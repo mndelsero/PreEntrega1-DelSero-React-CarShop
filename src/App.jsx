@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-// import ContadorProductos from './components/ContadorProducto'
-import Mostrador from './components/ItemListContainer'
+import ItemListContainer from './components/ItemListContainer'
 import Navbar from './components/Navbar'
-// import Text from './components/Text'
+import ItemDetailContainer from './components/ItemDetailContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Nosotros from './components/Nosotros';
+import Cart from './components/Cart';
 
 function App() {
 
@@ -11,14 +13,25 @@ function App() {
 
   return (
     <div >
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
 
-      <div className='main'>
-        <Mostrador />
-      </div>
-      {/* <ContadorProductos />  */}
+<Routes>
+<Route path="/"  element={<ItemListContainer/>}/>
+<Route path="/productos/:category"  element={<ItemListContainer/>}/>
+<Route path="/productos"  element={<ItemListContainer/>}/>
+<Route path="/item/:id"  element={<ItemDetailContainer />}/>
+<Route path="/nosotros"  element={<Nosotros/>}/>
+<Route path="/carrito"  element={<Cart/>}/>
 
-      {/* <Text/> */}
+</Routes>
+     
+         
+          
+
+
+
+      </BrowserRouter>
     </div>
   )
 }

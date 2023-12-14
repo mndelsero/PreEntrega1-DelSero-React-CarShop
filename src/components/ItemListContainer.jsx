@@ -1,33 +1,37 @@
 import { useEffect, useState } from "react"
-import data from "../proddata.json"
+import { pedirDatos } from "./helpers/PedirDatos"
 import ItemList from "./ItemList"
+import { useParams } from "react-router-dom"
+import Welcome from "./Welcome"
 
-const Mostrador = () => {
+const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
-
-    const pedirProductos = () => {
-        return new Promise((resolve, reject) => {
-            resolve(data)
-        })
-    }
-
-
+    const [titulo, setTitulo] = useState("Productos")
+    const category = useParams().category
     useEffect(() => {
-        pedirProductos()
+        pedirDatos()
             .then((res) => {
-                setProductos(res)
+                if (category) {
+                    setProductos(res.filter((prod) => prod.category === category))
+                    setTitulo(category)
+
+                } else {
+                    setProductos(res)
+                    setTitulo("Productos")
+                }
             })
-    }, [])
+    }, [category])
 
 
 
     return (
         <div >
-           <ItemList productos={productos}/>
+            <Welcome />
+            <ItemList productos={productos} titulo={titulo} />
 
         </div>
     )
 }
 
-export default Mostrador
+export default ItemListContainer

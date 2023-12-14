@@ -2,14 +2,14 @@ import Item from "./Item"
 
 
 
-const ItemList = ({ productos }) => {
+const ItemList = ({ productos, titulo }) => {
 
 
 
     return (
         <div>
 
-            <h1>PRODUCTOS</h1>
+            <h1>{titulo}</h1>
             <div className="seccion-productos">
                 {productos.length > 0 &&
 

@@ -1,5 +1,5 @@
 
-import shoppingCartImage from './img/shopping-cart.png';
+import shoppingCartImage from '../assets/shopping-cart.png';
 
 import React from 'react'
 

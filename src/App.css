@@ -50,6 +50,11 @@ padding-block: 0.5rem;
 padding-inline: 1.5rem;
 border-radius: 3px;
 border: solid rgb(20, 28, 89) 2px;
+cursor: pointer;
+}
+.link-menu:hover{
+  color: aquamarine;
+
 }
 
 .cart-widget span{

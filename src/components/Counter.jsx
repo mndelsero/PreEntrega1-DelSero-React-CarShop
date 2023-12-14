@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-const ContadorProductos=()=>{
+const Counter=()=>{
 const [contador, setContador]=useState(0)
 
 
@@ -35,4 +35,4 @@ function restar(){
 
 
 
-export default ContadorProductos
+export default  Counter
