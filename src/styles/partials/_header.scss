@@ -1,0 +1,69 @@
+.nav {
+    display: inline-block;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+
+    .navbar {
+        background-color: $blue;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+        .img-logo {
+            width: 6rem;
+        }
+
+        .link-menu {
+            display: flex;
+            padding-block: 0.5rem;
+            padding-inline: 1.5rem;
+            border-radius: 3px;
+            border: solid $gris 1px;
+            color: $gris;
+            cursor: pointer;
+
+            &:hover {
+                color: aquamarine;
+                border-color: aquamarine;
+
+            }
+
+
+
+            .cart-widget {
+
+                display: flex;
+                gap: 0.3rem;
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: aqua;
+                    color: $blue;
+                    border-radius: 3px;
+                    width: 2rem;
+                }
+
+                .cart-img {
+                    display: inline-block;
+                    width: 2rem;
+
+
+                }
+
+            }
+        }
+
+
+    }
+
+
+
+
+}

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { pedirDatos } from "./helpers/PedirDatos"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
-import Welcome from "./Welcome"
 
 const ItemListContainer = () => {
 

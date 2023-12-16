@@ -1,0 +1,77 @@
+.item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-bottom: 1rem;
+
+  h1{
+    color: $hover;
+    padding-block: 1rem;
+  }
+
+
+
+  .seccion-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+
+    .tarjetita-producto {
+      background-color: $blanco;
+      border: solid $gris 2px;
+      border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      width: min-content;
+      height: 25rem;
+
+
+      .producto-img {
+        border-radius: 1rem;
+        max-width: 15rem;
+
+      }
+
+      p {
+        font-size: 1rem;
+
+      }
+
+
+      h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: $hover;
+      }
+
+      .tarjetita-btn {
+        border: solid 1px $blue;
+        color: $blanco;
+        background-color: $hover;
+
+        padding: 0.5rem;
+        border-radius: 8px;
+
+        &:hover {
+          border-color: aquamarine;
+          color: aquamarine;
+          background-color: $blue;
+          transition: 0.5s;
+        }
+
+
+      }
+
+
+
+    }
+
+  }
+}

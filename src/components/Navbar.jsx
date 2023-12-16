@@ -7,7 +7,7 @@ import logo from "../assets/Fansly-Logo.png"
 const Navbar=()=>{
 
     return(
-<div >
+<div className="nav">
     
     <ul className="navbar">
    <li><Link to="/"><img src={logo} alt="" className="img-logo" /></Link></li> 

@@ -7,7 +7,7 @@ const ItemList = ({ productos, titulo }) => {
 
 
     return (
-        <div>
+        <div className="item-list">
 
             <h1>{titulo}</h1>
             <div className="seccion-productos">

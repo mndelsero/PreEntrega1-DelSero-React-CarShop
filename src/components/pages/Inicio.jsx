@@ -4,7 +4,7 @@ import Welcome from '../Welcome'
 
 const Inicio = () => {
   return (
-    <div>
+    <div className='inicio'>
 
         <Welcome/>
         <ItemListContainer/>

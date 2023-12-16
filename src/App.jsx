@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
+import './styles/App.css'
 import ItemListContainer from './components/ItemListContainer'
 import Navbar from './components/Navbar'
 import ItemDetailContainer from './components/ItemDetailContainer';
@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <div >
+    <div className='app' >
       <BrowserRouter>
         <Navbar />
 

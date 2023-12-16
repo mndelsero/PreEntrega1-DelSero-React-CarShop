@@ -19,7 +19,7 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <div className='detail-page'>
       {item && <ItemDetail item={item}/>}
       
     </div>

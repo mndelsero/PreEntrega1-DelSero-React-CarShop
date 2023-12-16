@@ -1,0 +1,101 @@
+
+.contador-productos{
+    margin: 1rem;
+    display: inline-flex;
+    align-self: center;
+    flex-direction: column;
+    padding: 1rem;
+    border: solid rgb(104, 186, 178) 5px;
+    border-radius: 1rem;
+
+
+
+    .contador-mostrar{
+        .contador-mostrar{
+            display: flex;
+            justify-content: center;
+            padding-block: 1rem;
+            font-size: 1rem;
+            background-color: antiquewhite;
+            color: blueviolet;
+            border-radius: 3px;
+        
+        
+        
+            
+          }
+         .btn-sctn{
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+    
+            .boton-contador{
+                font-size: larger;
+                padding: 0.5rem;
+                background-color: rgb(181, 97, 97);
+                border-radius: 5px;
+              } 
+         }
+    }
+    
+  }
+
+
+
+
+  .tarjetita-detail{
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+    .intro-sctn{
+
+
+
+
+      .detail-img{
+        width: 50vw;
+        padding: 0.2rem;
+        border: solid $gris 1px;
+  
+      }
+  h2{
+    font-size: 3rem;
+    color: $dark;
+  }
+    }
+
+    .info-sctn{
+
+
+      
+h3{
+  font-size: 1.5rem;
+  color: $dark;
+}
+
+.detail-btn{
+  
+  border: solid 1px $blue;
+  color: $blanco;
+  background-color: $hover;
+
+  padding: 0.5rem;
+  border-radius: 8px;
+
+  &:hover {
+    border-color: aquamarine;
+    color: aquamarine;
+    background-color: $blue;
+    transition: 0.5s;
+  }
+}
+
+    }
+
+  
+
+
+
+  }
