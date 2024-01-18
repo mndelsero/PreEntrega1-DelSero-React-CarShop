@@ -1,82 +1,162 @@
-
-.contador-productos{
-    margin: 1rem;
-    display: inline-flex;
-    align-self: center;
-    flex-direction: column;
-    padding: 1rem;
-    border: solid rgb(104, 186, 178) 5px;
-    border-radius: 1rem;
-
+.contador-productos {
+  margin: 1rem;
+  display: inline-flex;
+  align-self: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: solid rgb(104, 186, 178) 5px;
+  border-radius: 1rem;
 
 
-    .contador-mostrar{
-        .contador-mostrar{
-            display: flex;
-            justify-content: center;
-            padding-block: 1rem;
-            font-size: 1rem;
-            background-color: antiquewhite;
-            color: blueviolet;
-            border-radius: 3px;
-        
-        
-        
-            
-          }
-         .btn-sctn{
-            display: flex;
-            justify-content: space-around;
-            padding: 1rem;
-    
-            .boton-contador{
-                font-size: larger;
-                padding: 0.5rem;
-                background-color: rgb(181, 97, 97);
-                border-radius: 5px;
-              } 
-         }
+
+  .contador-mostrar {
+    .contador-mostrar {
+      display: flex;
+      justify-content: center;
+      padding-block: 1rem;
+      font-size: 1rem;
+      background-color: antiquewhite;
+      color: blueviolet;
+      border-radius: 3px;
+
+
+
+
     }
-    
-  }
 
+    .btn-sctn {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
 
-
-
-  .tarjetita-detail{
-    display: flex;
-justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-
-    .intro-sctn{
-
-
-
-
-      .detail-img{
-        width: 50vw;
-        padding: 0.2rem;
-        border: solid $gris 1px;
-  
+      .boton-contador {
+        font-size: larger;
+        padding: 0.5rem;
+        background-color: rgb(181, 97, 97);
+        border-radius: 5px;
       }
-  h2{
-    font-size: 3rem;
-    color: $dark;
-  }
     }
+  }
 
-    .info-sctn{
-
-
-      
-h3{
-  font-size: 1.5rem;
-  color: $dark;
 }
 
-.detail-btn{
-  
+
+
+
+.tarjetita-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+
+  .intro-sctn {
+
+
+
+
+    .detail-img {
+      width: 50vw;
+      padding: 0.2rem;
+      border: solid $gris 1px;
+
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: $dark;
+    }
+  }
+
+  .info-sctn {
+
+
+
+    h3 {
+      font-size: 1.5rem;
+      color: $dark;
+    }
+
+    .detail-btn {
+
+      border: solid 1px $blue;
+      color: $blanco;
+      background-color: $hover;
+
+      padding: 0.5rem;
+      border-radius: 8px;
+
+      &:hover {
+        border-color: aquamarine;
+        color: aquamarine;
+        background-color: $blue;
+        transition: 0.5s;
+      }
+    }
+
+    .item-count-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+
+      .item-count {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+
+        button {
+          padding: 0.5rem;
+          font-size: 1rem;
+          line-height: 0.5rem;
+          border: none;
+          cursor: pointer;
+          border-radius: 0.3rem;
+          background-color: $hover;
+          color: $gris;
+
+          &:hover {
+            background-color: $dark;
+            transition: 0.5s;
+          }
+
+        }
+
+        p {
+          font-size: 2rem;
+          color: $gris;
+          margin: 0;
+        }
+
+
+      }
+    }
+
+  }
+
+
+}
+
+.final-compra {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  h1{
+    color: $hover;
+    
+  }
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+.eliminar {
+
   border: solid 1px $blue;
   color: $blanco;
   background-color: $hover;
@@ -85,17 +165,77 @@ h3{
   border-radius: 8px;
 
   &:hover {
-    border-color: aquamarine;
-    color: aquamarine;
-    background-color: $blue;
+    border-color: $blue;
+    color: $blanco;
+    background-color: rgb(109, 25, 25);
     transition: 0.5s;
   }
 }
 
+.volver {
+  border: solid 1px $blue;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: $blanco;
+  background-color: $hover;
+  padding: 0.5rem;
+  border-radius: 8px;
+
+  &:hover {
+    border-color: aquamarine;
+    color: aquamarine;
+    background-color: green;
+    transition: 0.5s;
+  }
+}
+
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-top: solid $gris 1px;
+  width: 100%;
+  padding: 1.5rem;
+
+  h2 {
+    color: $dark;
+  }
+
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+
+    input {
+      border: $blue 2px solid;
+      border-radius: 0.4rem;
+      padding: 0.2rem;
     }
 
-  
+    .comment {
+      padding: 0.3rem;
+    }
 
+    .enviar {
+      border: solid 1px $blue;
+      color: $blanco;
+      background-color: $hover;
+      width: 5rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      align-self: center;
 
+      &:hover {
+        border-color: aquamarine;
+        color: aquamarine;
+        background-color: $blue;
+        transition: 0.5s;
+      }
 
+    }
   }
+}

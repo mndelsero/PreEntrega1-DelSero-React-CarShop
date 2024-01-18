@@ -1,5 +1,5 @@
 import React from 'react';
-import wallpaper from "../assets/fondo.jpg"
+// import wallpaper from "../assets/fondo.jpg"
 
 const Welcome = () => {
   return (

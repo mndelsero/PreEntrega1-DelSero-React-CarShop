@@ -32,6 +32,19 @@
       width: min-content;
       height: 25rem;
 
+      
+      &:hover {
+        transition: 0.5s;
+        
+        transform: scale(1.1);
+        transform: translateY(-5px);
+       
+
+        border-color: $hover;
+        transition: 0.5s;
+
+    }
+
 
       .producto-img {
         border-radius: 1rem;

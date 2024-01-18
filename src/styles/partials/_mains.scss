@@ -18,6 +18,145 @@
     }
 }
 
+
+.carrito {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;
+
+
+    h2 {
+        color: $blue;
+    }
+
+    .carrito-vacio {
+        color: $dark;
+    }
+
+    .suma-total {
+        font-size: 2rem;
+        color: $dark;
+    }
+
+    .vaciar {
+
+        border: solid 1px $blue;
+        color: $blanco;
+        background-color: $hover;
+
+        padding: 0.5rem;
+        border-radius: 8px;
+
+        &:hover {
+            border-color: $blue;
+            color: $blanco;
+            background-color: rgb(109, 25, 25);
+            transition: 0.5s;
+        }
+    }
+
+    .volver {
+        border: solid 1px $blue;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: $blanco;
+        background-color: $hover;
+        padding: 0.5rem;
+        border-radius: 8px;
+
+        &:hover {
+            border-color: aquamarine;
+            color: aquamarine;
+            background-color: $blue;
+            transition: 0.5s;
+        }
+    }
+
+    .finalizar {
+        margin-bottom: 1rem;
+        border: solid 1px $blue;
+        color: $blanco;
+        background-color: $hover;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+
+        &:hover {
+            border-color: aquamarine;
+            color: aquamarine;
+            background-color: green;
+            transition: 0.5s;
+        }
+    }
+
+    .tu-compra {
+        width: 100%;
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            color: $hover;
+        }
+
+        .cart-prods {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 3rem;
+            justify-items: center;
+            align-items: center;
+
+
+            .cart-prod {
+                background-color: $blanco;
+                border: solid $gris 2px;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                width: 20rem;
+
+
+
+
+                &:hover {
+                    transition: 0.5s;
+
+                    transform: scale(1.1);
+                    transform: translateY(-5px);
+
+
+                    border-color: $hover;
+                    transition: 0.5s;
+
+                }
+
+                h4 {
+                    color: $dark;
+                }
+
+                h5 {
+                    color: $hover;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
 .nosotros {
     display: flex;
     flex-direction: column;
@@ -77,27 +216,32 @@
                 justify-items: center;
                 gap: 3rem;
 
-                a {
-                    .logo{width: 4rem;
-                        cursor: pointer;
+
+                .logo {
+                    font-size: 4rem;
+                    cursor: pointer;
+
+                    svg {
+
 
                         &:hover {
                             transition: 0.5s;
-                            
+
                             transform: scale(1.1);
                             transform: translateY(-5px);
-                           
+
 
                             color: $hover;
                             transition: 0.5s;
 
                         }
-
                     }
-                  
-                  
-                   
+
                 }
+
+
+
+
 
 
             }

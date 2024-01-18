@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Contacto from '../Contacto';
 
 const Nosotros = () => {
   return (
@@ -21,14 +22,17 @@ const Nosotros = () => {
 <h4>Nuestras Redes, forma parte del grupo NewCars!!</h4>
 
 <div className='redes'>
-  <a href=""><FontAwesomeIcon icon={faFacebook} class="logo"/></a>
-  <a href=""><FontAwesomeIcon icon={faInstagram} class='logo' /></a>
-  <a href=""><FontAwesomeIcon icon={faEnvelope} class='logo'/></a>
-  <a href=""><FontAwesomeIcon icon={faWhatsapp} class='logo'/></a>
+  <a href="" className="logo"><FontAwesomeIcon icon={faFacebook} /></a>
+  <a href="" className='logo'><FontAwesomeIcon icon={faInstagram}  /></a>
+  <a href="" className='logo'><FontAwesomeIcon icon={faEnvelope} /></a>
+  <a href="" className='logo'><FontAwesomeIcon icon={faWhatsapp} /></a>
 </div>
 </div>
 
+
+
 </div>
+<Contacto/>
      
     </div>
   )

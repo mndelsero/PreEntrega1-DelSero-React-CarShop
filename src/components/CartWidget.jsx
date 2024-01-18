@@ -1,15 +1,18 @@
 
 import shoppingCartImage from '../assets/shopping-cart.png';
 
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from './context/CartContext';
 
-const CartWidget = () => {
+const CartWidget = ({}) => {
+const{cantidadEnCarrito}=useContext(CartContext);
+
   return (
     <div className='cart-widget'>
      
       
-      <img src={shoppingCartImage} alt="" className='cart-img'/>
-      <span className="cart-span"> 0</span>
+      <img src={shoppingCartImage} alt="" className='cart-img' /> 
+      <span className="cart-span"> {cantidadEnCarrito()}</span>
       
       
     </div>
